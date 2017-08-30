@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wHb-DB-pts">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="maisonneuebold.ttf">
+            <string>MaisonNeue-Bold</string>
+        </array>
+        <array key="maisonneuebook.ttf">
+            <string>MaisonNeue-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="vob-ov-9Yj">
+            <objects>
+                <viewController id="wHb-DB-pts" customClass="MainViewController" customModule="hubrick_Codechallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="evs-Gq-5fv"/>
+                        <viewControllerLayoutGuide type="bottom" id="8yL-4O-9Dd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6x7-qw-OL1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="556" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vXK-QZ-KdN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="556" id="88I-Ey-2rC" customClass="CustomCell" customModule="hubrick_Codechallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="556"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88I-Ey-2rC" id="dzC-NR-pKg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="555.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="8yv-Gz-DEe">
+                                                    <rect key="frame" x="15" y="35" width="47" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="iIb-B3-tmj"/>
+                                                        <constraint firstAttribute="width" constant="47" id="msD-KA-LzM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txg-Hy-YZT">
+                                                    <rect key="frame" x="88" y="35" width="162" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="162" id="d7k-3g-HsR"/>
+                                                        <constraint firstAttribute="height" constant="21" id="wnK-a1-vKv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="on4-7g-eV7">
+                                                    <rect key="frame" x="0.0" y="97" width="375" height="295"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="375" id="4BD-YK-2Is"/>
+                                                        <constraint firstAttribute="height" constant="295" id="AiF-Aa-feU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8e-Hi-4z5">
+                                                    <rect key="frame" x="88" y="61" width="162" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Lf7-Ec-LWG"/>
+                                                        <constraint firstAttribute="width" constant="162" id="ovE-H1-LXY"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRY-aM-R26">
+                                                    <rect key="frame" x="15" y="400" width="317" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="SBp-dM-qak"/>
+                                                        <constraint firstAttribute="width" constant="317" id="XLb-q2-QYo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Bold" family="Maison Neue" pointSize="20"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xd-Ic-pWf">
+                                                    <rect key="frame" x="5" y="425" width="355" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="355" id="Jql-4m-xcA"/>
+                                                        <constraint firstAttribute="height" constant="66" id="dAX-6A-UIe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart1" translatesAutoresizingMaskIntoConstraints="NO" id="BqO-0A-rtc">
+                                                    <rect key="frame" x="15" y="517" width="22" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="VIf-8E-2oR"/>
+                                                        <constraint firstAttribute="height" constant="18" id="rTO-Dj-zUz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgg-HV-5k8">
+                                                    <rect key="frame" x="45" y="517" width="47" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="Aip-AD-tnt"/>
+                                                        <constraint firstAttribute="height" constant="25" id="QFl-RC-nH0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble" translatesAutoresizingMaskIntoConstraints="NO" id="Qer-C7-eBT">
+                                                    <rect key="frame" x="88" y="517" width="22" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="Eiq-QI-bli"/>
+                                                        <constraint firstAttribute="width" constant="22" id="zQJ-7z-jeI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYM-Na-H3e">
+                                                    <rect key="frame" x="118" y="517" width="47" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="O1Q-nc-RPM"/>
+                                                        <constraint firstAttribute="height" constant="25" id="dFf-eU-F5V"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Opposite_Arrows" translatesAutoresizingMaskIntoConstraints="NO" id="uZ1-GH-Ygr">
+                                                    <rect key="frame" x="164" y="517" width="22" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="5Aw-l0-qkq"/>
+                                                        <constraint firstAttribute="height" constant="18" id="fgE-dw-VLg"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MR-L9-zdg">
+                                                    <rect key="frame" x="194" y="517" width="47" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="1gp-05-Z34"/>
+                                                        <constraint firstAttribute="width" constant="47" id="vLI-8y-xGy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="MaisonNeue-Book" family="Maison Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="KYM-Na-H3e" firstAttribute="leading" secondItem="Qer-C7-eBT" secondAttribute="trailing" constant="8" id="AYh-bk-wf0"/>
+                                                <constraint firstItem="Qgg-HV-5k8" firstAttribute="leading" secondItem="BqO-0A-rtc" secondAttribute="trailing" constant="8" id="JHd-n4-7hK"/>
+                                                <constraint firstItem="txg-Hy-YZT" firstAttribute="top" secondItem="dzC-NR-pKg" secondAttribute="top" constant="35" id="M7r-rn-S7x"/>
+                                                <constraint firstItem="nRY-aM-R26" firstAttribute="top" secondItem="on4-7g-eV7" secondAttribute="bottom" constant="8" id="QGU-0o-P52"/>
+                                                <constraint firstItem="2Xd-Ic-pWf" firstAttribute="top" secondItem="nRY-aM-R26" secondAttribute="bottom" constant="4" id="SbA-RL-31q"/>
+                                                <constraint firstItem="uZ1-GH-Ygr" firstAttribute="leading" secondItem="Qer-C7-eBT" secondAttribute="trailing" constant="54" id="T6Y-U1-nCE"/>
+                                                <constraint firstItem="Qer-C7-eBT" firstAttribute="leading" secondItem="BqO-0A-rtc" secondAttribute="trailing" constant="51" id="Wli-M6-J7C"/>
+                                                <constraint firstItem="2MR-L9-zdg" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="X7b-rQ-cYB"/>
+                                                <constraint firstItem="A8e-Hi-4z5" firstAttribute="top" secondItem="txg-Hy-YZT" secondAttribute="bottom" constant="5" id="ZTD-7Y-r0R"/>
+                                                <constraint firstItem="Qer-C7-eBT" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="bPM-DY-1jX"/>
+                                                <constraint firstItem="BqO-0A-rtc" firstAttribute="leading" secondItem="dzC-NR-pKg" secondAttribute="leading" constant="15" id="cjG-l3-LmN"/>
+                                                <constraint firstItem="8yv-Gz-DEe" firstAttribute="top" secondItem="dzC-NR-pKg" secondAttribute="top" constant="35" id="dWJ-ot-YXc"/>
+                                                <constraint firstItem="on4-7g-eV7" firstAttribute="top" secondItem="8yv-Gz-DEe" secondAttribute="bottom" constant="20" id="eQw-36-mUs"/>
+                                                <constraint firstItem="2MR-L9-zdg" firstAttribute="leading" secondItem="uZ1-GH-Ygr" secondAttribute="trailing" constant="8" id="fn1-xV-Hnm"/>
+                                                <constraint firstItem="on4-7g-eV7" firstAttribute="leading" secondItem="dzC-NR-pKg" secondAttribute="leading" id="ggv-lm-kyM"/>
+                                                <constraint firstItem="txg-Hy-YZT" firstAttribute="leading" secondItem="8yv-Gz-DEe" secondAttribute="trailing" constant="26" id="ivt-lK-JJ0"/>
+                                                <constraint firstAttribute="trailing" secondItem="on4-7g-eV7" secondAttribute="trailing" id="kQC-5r-MtU"/>
+                                                <constraint firstItem="Qgg-HV-5k8" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="p0R-he-pzE"/>
+                                                <constraint firstItem="8yv-Gz-DEe" firstAttribute="leading" secondItem="dzC-NR-pKg" secondAttribute="leading" constant="15" id="q6h-t0-OOk"/>
+                                                <constraint firstItem="BqO-0A-rtc" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="rrz-rd-0ws"/>
+                                                <constraint firstItem="2Xd-Ic-pWf" firstAttribute="leading" secondItem="dzC-NR-pKg" secondAttribute="leading" constant="5" id="s8q-hY-ECb"/>
+                                                <constraint firstItem="uZ1-GH-Ygr" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="sTV-W2-MEG"/>
+                                                <constraint firstItem="KYM-Na-H3e" firstAttribute="top" secondItem="2Xd-Ic-pWf" secondAttribute="bottom" constant="26" id="vNe-nM-Doa"/>
+                                                <constraint firstItem="nRY-aM-R26" firstAttribute="leading" secondItem="dzC-NR-pKg" secondAttribute="leading" constant="15" id="wwX-31-rXS"/>
+                                                <constraint firstItem="A8e-Hi-4z5" firstAttribute="leading" secondItem="8yv-Gz-DEe" secondAttribute="trailing" constant="26" id="xVW-tX-SVa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="comment" destination="KYM-Na-H3e" id="Uxj-dB-s9Q"/>
+                                            <outlet property="commentImageView" destination="Qer-C7-eBT" id="m9o-Ih-Wvp"/>
+                                            <outlet property="descriptionLabel" destination="nRY-aM-R26" id="ngV-BE-Sif"/>
+                                            <outlet property="descriptionTxtLabel" destination="2Xd-Ic-pWf" id="XaC-qR-YD5"/>
+                                            <outlet property="detailTitleLabel" destination="A8e-Hi-4z5" id="vH4-gH-fsF"/>
+                                            <outlet property="likeImageView" destination="BqO-0A-rtc" id="4kb-4d-GcG"/>
+                                            <outlet property="likes" destination="Qgg-HV-5k8" id="Ga7-ci-QJd"/>
+                                            <outlet property="mainImageView" destination="on4-7g-eV7" id="pvP-DB-J7q"/>
+                                            <outlet property="share" destination="2MR-L9-zdg" id="8EN-C6-ag1"/>
+                                            <outlet property="shareImageView" destination="uZ1-GH-Ygr" id="8eU-Dy-u65"/>
+                                            <outlet property="titleImageView" destination="8yv-Gz-DEe" id="oZd-H8-3bw"/>
+                                            <outlet property="titleLabel" destination="txg-Hy-YZT" id="Ugb-Ac-wdQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vXK-QZ-KdN" firstAttribute="leading" secondItem="6x7-qw-OL1" secondAttribute="leading" id="6ao-Wd-JkS"/>
+                            <constraint firstAttribute="trailing" secondItem="vXK-QZ-KdN" secondAttribute="trailing" id="EjD-S6-JrR"/>
+                            <constraint firstItem="vXK-QZ-KdN" firstAttribute="top" secondItem="6x7-qw-OL1" secondAttribute="top" id="MN2-rs-FYJ"/>
+                            <constraint firstItem="8yL-4O-9Dd" firstAttribute="top" secondItem="vXK-QZ-KdN" secondAttribute="bottom" id="tfz-cE-3ba"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedTableView" destination="vXK-QZ-KdN" id="uEK-Xv-jIB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TD-18-J7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Opposite_Arrows" width="24" height="22"/>
+        <image name="bubble" width="47" height="43"/>
+        <image name="heart1" width="16" height="16"/>
+        <image name="logo_placeholder" width="1114" height="1066"/>
+        <image name="main_placeholder" width="970" height="982"/>
+    </resources>
+</document>
